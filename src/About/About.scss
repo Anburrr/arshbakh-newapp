@@ -1,0 +1,147 @@
+.mainAbout-div{
+    background-color: #191919;
+    height: 1000px;
+}
+
+
+.outterAbout-div{
+width: 90%;
+margin: 0 auto;
+}
+
+.aboutHeader{
+    color: white;
+    font-weight: 600;
+    padding-top: 150px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.Info{
+    
+}
+
+.schoolIntro{
+    color: white;
+}
+
+.highlightText{
+    font-weight: 800;
+    color: white;
+}
+
+.skills{
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.meIntro{
+    width:30%;
+    color: white;
+    line-height: 1.8;
+}
+
+.line1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.line2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.programmingSkills{
+    display: flex;
+    flex-direction: row;
+}
+
+.programmingLang{
+    color: white;
+}
+
+.programmingTitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.languageTitle{
+    color: white;
+    padding-left: 100px;
+}
+
+
+
+.resumeBox{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    min-width: 150px;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 100;
+}
+
+
+.resumeBox span{
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    top: 0; left: 0;
+    transition: 0.5s;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+
+.contactBox{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    min-width: 150px;
+    border-radius: 10px;
+    background-color: black;
+}
+.contactBox span{
+position: relative;
+display: inline-block;
+padding: 20px;
+cursor: pointer;
+font-size: 15px;
+font-weight: 500;
+top: 0; left: 0;
+transition: 0.5s;
+border-radius: 5px;
+width: 150px;
+text-align: center;
+}
+
+
+  
+  .resumeBox span {
+    color: rgb(28, 31, 30);
+    transition: 0.2s;
+  }  
+  .resumeBox span:hover {
+    color: rgb(255,255,255);
+    transition: 0.2s 0.1s;
+  }
+  
+
+.infoBoxes{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}

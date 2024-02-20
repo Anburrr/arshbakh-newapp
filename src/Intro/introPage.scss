@@ -1,0 +1,76 @@
+.nameIntro{
+    width: 90%;
+    margin: 0 auto;
+    
+    text-align: left;
+}
+
+.hello{
+    font-size: 50px;
+    color: white;
+}
+
+.Arsh{
+    color: white;
+    font-weight: 700;
+    font-size: 200px;
+    margin: 0 !important;
+    
+}
+
+
+.welcome{
+    font-size: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.scrollButton{
+    margin-top: 120px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    cursor:pointer;
+    margin-bottom: 400px;
+}
+
+.scrollButton span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+    margin: -5px;
+
+}
+
+.scrollButton span:nth-child(2){
+    animation-delay: -0.2s;
+    }
+
+.scrollButton span:nth-child(2){
+animation-delay: -0.4s;
+}
+
+.scrollButton span:nth-child(3){
+    animation-delay: -0.6s;
+    }
+
+@keyframes animate{
+   0%{
+    opacity: 0;
+    transform:rotate(45deg) translate(-20px, -20px);
+   } 
+   50%{
+    opacity: 1;
+
+   } 
+   100%{
+    opacity: 0;
+    transform:rotate(45deg) translate(20px, 20px);
+   } 
+}

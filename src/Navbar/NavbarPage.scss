@@ -1,0 +1,32 @@
+.outterNav-div{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+
+
+
+.mainLogo{
+width: 110px;
+}
+
+.quicktap{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.innerNav-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbarTags{
+    color: white;
+    font-weight: 700;
+}
