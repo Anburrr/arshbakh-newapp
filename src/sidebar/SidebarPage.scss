@@ -1,0 +1,99 @@
+.outterLinks-div{
+    width: 5%;
+    float: right;
+}
+.links{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.linkgithub {
+    
+    display: flex;
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the button circular */
+    margin: 5px; /* Adjust spacing between buttons */
+    overflow: hidden; /* Hides overflow content */
+    background: linear-gradient(to top left, red, yellow); /* Adjust gradient colors */
+    justify-content: center;
+    animation: buttonHover;
+    cursor: pointer;
+}
+
+.linklinkedin {
+    
+    display: flex;
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the button circular */
+    margin: 5px; /* Adjust spacing between buttons */
+    overflow: hidden; /* Hides overflow content */
+    background: linear-gradient(to top left, blue, green); /* Adjust gradient colors */
+    justify-content: center;
+    animation: buttonHover;
+    cursor: pointer;
+}
+
+.linkinstagram {
+    
+    display: flex;
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the button circular */
+    margin: 5px; /* Adjust spacing between buttons */
+    overflow: hidden; /* Hides overflow content */
+    background: linear-gradient(to top left, #5b5ddf, #d5d5ec); /* Adjust gradient colors */
+    justify-content: center;
+    animation: buttonHover;
+    cursor: pointer;
+}
+
+.linktwitter {
+    
+    display: flex;
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the button circular */
+    margin: 5px; /* Adjust spacing between buttons */
+    overflow: hidden; /* Hides overflow content */
+    background: linear-gradient(to top left, #451804, #fda600); /* Adjust gradient colors */
+    justify-content: center;
+    animation: buttonHover;
+    cursor: pointer;
+}
+
+.link:hover{
+    background: linear-gradient(331deg, rgba(249,249,249,1) 0%, rgba(4,0,0,1) 59%, rgba(4,0,0,1) 60%);
+}
+.githubbutton{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    
+}
+
+.linkedinbutton{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-self: center;
+
+}
+
+.instagrambutton{
+    display: flex;
+    width: 60%;
+    height: auto;
+    align-self: center;
+}
+
+.twitterbutton{
+    display: flex;
+    width: 60%;
+    height: auto;
+    align-self: center;
+}

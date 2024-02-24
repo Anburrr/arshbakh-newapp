@@ -11,7 +11,8 @@ function About() {
           </h1>
           <p className="schoolIntro">
             I am a freshman at the school of Information Technology at{" "}
-            <span className="highlightText">York University</span> for Honours
+            <span>
+                <a className="highlightText" href="https://www.yorku.ca/">York University</a></span> for Honours
             Bcomm in Commerce Development
           </p>
           <div className="skills">
@@ -63,16 +64,12 @@ function About() {
             </div>
           </div>
 <div className="infoBoxes">
-            <div className="resumeBox">
-                <button className="btn btn-2 hover-slide-right">
-                <span className="resumeText">Resume</span>
-                </button>
+<div className="resumeBox-div">
+            <a className="resumeBox" href="#"><span>Resume</span></a>
             </div>
 
-            <div className="contactBox">
-                <button className="btn btn-2 hover-slide-right">
-                <span className="contactText">Contact Me</span>
-                </button>
+            <div className="contactBox-div">
+            <a className="contactBox" href="#"><span>Contact Me!</span></a>
             </div>
 </div>
         </div>

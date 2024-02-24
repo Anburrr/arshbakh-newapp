@@ -1,0 +1,99 @@
+.outterProp-div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.propSections {
+  width: 100%;
+  height: 100%;
+}
+
+.outterProp-div:hover {
+  .everything {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    top: 0;
+    position: absolute;
+    .projectTitle {
+      display: block !important;
+      color: white;
+      padding-left: 10px;
+    }
+
+    .projectDate {
+      display: block !important;
+      color: white;
+      padding-right: 10px;
+    }
+    .projectText {
+      display: block !important;
+      color: white;
+    }
+
+    .projectText-div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .propSections {
+    filter: blur(5px);
+
+    background-color: black;
+    border-radius: 20px;
+
+    .ProjectIMG {
+      max-width: 98%;
+    }
+  }
+}
+
+.imgSection {
+  width: 10%;
+}
+
+.ProjectIMG {
+  max-width: 95%;
+  max-height: 95%;
+  position: absolute;
+  align-self: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.propTexts {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+}
+.projectTitle {
+  color: white;
+
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.projectDate {
+  color: white;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.alltextInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

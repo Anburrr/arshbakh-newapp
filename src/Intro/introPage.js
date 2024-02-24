@@ -67,14 +67,15 @@ function IntroPage() {
           </div>
         </div>
 
-
+<div className="scrollButton-div">
        <div className="scrollButton">
-        <a href="#aboutHeader">
+        <a className="roti" href="#aboutHeader">
         <span></span>
         <span></span>
         <span></span>
         </a>
        </div>
+      </div>
       </div>
     </>
   );

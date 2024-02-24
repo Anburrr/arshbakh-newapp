@@ -1,5 +1,4 @@
 .mainAbout-div{
-    background-color: #191919;
     height: 1000px;
 }
 
@@ -12,14 +11,11 @@ margin: 0 auto;
 .aboutHeader{
     color: white;
     font-weight: 600;
-    padding-top: 150px;
-    margin-bottom: 50px;
+    padding-top: 120px;
+    margin-bottom: 80px;
     font-size: 50px;
 }
 
-.Info{
-    
-}
 
 .schoolIntro{
     color: white;
@@ -46,12 +42,14 @@ margin: 0 auto;
     display: flex;
     flex-direction: column;
     padding-left: 100px;
+    gap: 20px;
 }
 
 .line2{
     display: flex;
     flex-direction: column;
     padding-left: 100px;
+    gap: 20px;
 }
 
 .programmingSkills{
@@ -74,69 +72,108 @@ margin: 0 auto;
 }
 
 
-
-.resumeBox{
-    position: relative;
-    display: inline-block;
-    width: auto;
-    height: auto;
-    cursor: pointer;
-    min-width: 150px;
-    border-radius: 10px;
+.resumeBox-div{
     background-color: black;
-    opacity: 100;
+    border-radius: 50px;
 }
-
-
-.resumeBox span{
-    position: relative;
-    display: inline-block;
-    padding: 20px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 500;
-    top: 0; left: 0;
-    transition: 0.5s;
-    border-radius: 5px;
-    width: 150px;
-    text-align: center;
-}
-
-
-.contactBox{
-    position: relative;
-    display: inline-block;
-    width: auto;
-    height: auto;
-    cursor: pointer;
-    min-width: 150px;
-    border-radius: 10px;
-    background-color: black;
-}
-.contactBox span{
-position: relative;
-display: inline-block;
-padding: 20px;
-cursor: pointer;
-font-size: 15px;
-font-weight: 500;
-top: 0; left: 0;
-transition: 0.5s;
-border-radius: 5px;
-width: 150px;
-text-align: center;
-}
-
 
   
-  .resumeBox span {
-    color: rgb(28, 31, 30);
-    transition: 0.2s;
-  }  
-  .resumeBox span:hover {
-    color: rgb(255,255,255);
-    transition: 0.2s 0.1s;
+ .resumeBox{
+    display: block;
+    width: 175px;
+    height: 50px;
+    line-height: 48px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border: 2px solid #333;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+   
+    
   }
+  
+  .resumeBox span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .resumeBox:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    transition: all .35s;
+    border-radius: 50px;
+  }
+  
+  .resumeBox:hover{
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+  }
+  
+  .resumeBox:hover:after{
+    width: 100%;
+    border-radius: 50px;
+  }
+
+
+  .contactBox-div{
+    background-color: black;
+    border-radius: 50px;
+}
+  
+ .contactBox{
+    display: block;
+    width: 175px;
+    height: 50px;
+    line-height: 48px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    justify-self: center;
+    border-radius: 50px;
+  }
+  
+  .contactBox span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .contactBox:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    transition: all .35s;
+    border-radius: 50px;
+  }
+  
+  .contactBox:hover{
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+  }
+  
+  .contactBox:hover:after{
+    width: 100%;
+    border-radius: 50px;
+  }
+
   
 
 .infoBoxes{

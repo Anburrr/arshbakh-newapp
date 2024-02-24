@@ -7,6 +7,47 @@ margin: 0 auto;
     color: white;
     font-weight: 600;
     padding-top: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     font-size: 50px;
 }
+
+.experiencebox1{
+    width: 620px;
+    height: 320px;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: relative;
+    background-color: grey;
+}
+.experiencebox2{
+    width: 400px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.boxCombined-div{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.smallerbox-div{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.mediumBox-div{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.line{
+    color: white;
+    padding-top: 50px;
+    padding-bottom:50px;
+    opacity: 0.2;
+}
+
