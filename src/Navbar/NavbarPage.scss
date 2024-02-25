@@ -1,16 +1,18 @@
+
 .outterNav-div{
     width: 95%;
     margin: 0 auto;
     margin-top: 20px;
     position: fixed;
     top: 0;
+    z-index: 1; 
 }
-
 
 
 
 .mainLogo{
 width: 110px;
+margin-left: 50px;
 }
 
 .quicktap{
@@ -23,8 +25,7 @@ width: 110px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
 .navbarTags{

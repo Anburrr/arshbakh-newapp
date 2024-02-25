@@ -1,9 +1,12 @@
 .outterLinks-div{
-    width: 5%;
-    float: right;
+    position: fixed;
+   bottom: 21%;
+    right: 55px; 
+    z-index: 1;
+
 }
 .links{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     

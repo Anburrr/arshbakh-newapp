@@ -6,7 +6,7 @@ import Logo from "../assets/images/ABLogo.png";
 function Navbar() {
   return (
     <div className="outterNav-div">
-      <div className="fix-div">
+      
         <div className="innerNav-div">
           <div className="img-div">
             <img className="mainLogo" src={Logo} />
@@ -17,7 +17,6 @@ function Navbar() {
             <a className="navbarTags">experience</a>
             <a className="navbarTags">contact</a>
           </div>
-        </div>
       </div>
     </div>
   );

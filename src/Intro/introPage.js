@@ -13,22 +13,27 @@ const charecteristics = [
 function IntroPage() {
   const mainName = useRef(null);
   const text = useRef(null);
-  const walk = 10;
+  const walk = 13.5;
   const [textShadow, setTextShadow] = useState(
     "0 0 0 rgba(189, 184, 184, 0.7)"
   );
   const [index, setIndex] = useState(0);
 
   function shadow(e) {
-    const { offsetWidth: width, offsetHeight: height } = mainName.current;
-    const x = e.pageX;
-    const y = e.pageY;
-    const xWalk = (x / width) * walk - walk / 2;
-    const yWalk = (y / height) * walk - 15 - walk / 2;
-
-    const newShadow = `${xWalk}px ${yWalk}px 0 rgba(189, 184, 184, 0.7)`;
+    const { offsetLeft: left, offsetTop: top, offsetWidth: width, offsetHeight: height } = mainName.current;
+    const x = e.pageX - left; // Adjust mouse coordinates relative to the div
+    const y = e.pageY - top; // Adjust mouse coordinates relative to the div
+    const xWalk = -((x / width) * walk - walk / 2);
+    const yWalk = -((y / height) * walk - 15 - walk / 2);
+  
+    // Ensure xWalk and yWalk are within the boundaries of the div
+    const newXWalk = Math.max(Math.min(xWalk, walk / 2), -walk / 2);
+    const newYWalk = Math.max(Math.min(yWalk, walk / 2), -walk / 2);
+  
+    const newShadow = `${newXWalk}px ${newYWalk}px 0 rgba(128, 128, 128, 1)`;
     setTextShadow(newShadow);
   }
+  
   useEffect(() => {
     if (mainName.current) {
       document.addEventListener("mousemove", shadow);
@@ -59,7 +64,7 @@ function IntroPage() {
               </h1>
             </div>
               <p className="welcome">
-                Known to be A
+                Known As A
                 <TextTransition springConfig={presets.wobbly}>
                   {charecteristics[index % charecteristics.length]}
                 </TextTransition>
